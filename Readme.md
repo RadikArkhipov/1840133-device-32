@@ -1,9 +1,14 @@
 # Личный проект «Девайс»
 
 * Студент: [Радик Архипов](https://up.htmlacademy.ru/htmlcss/32/user/1840133).
+ HEAD
 * Наставник: [Наталья Рыжова] (https://htmlacademy.ru/profile/id418965)
  
----
+
+* Наставник: Наталья Рыжова.
+
+ [Наталья Рыжова] (https://htmlacademy.ru/profile/id418965)
+
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
