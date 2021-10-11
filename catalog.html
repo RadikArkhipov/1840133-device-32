@@ -45,7 +45,7 @@
       </header>
       <main class="main-inner">
         <header class="inner-header">
-          <h1 clss="inner-header-title">Моноподы для селфи</h1>
+          <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -58,10 +58,10 @@
             </li>
           </ul>
         </header>
-        <section clas="catalog-products">
+        <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <h3 class="filter-title">Фильтр:</h3>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="GET">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="GET" name="filter-form">
            
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
@@ -143,7 +143,7 @@
           </form>
 
           <h3 class="sorting">Сортировка:</h3>
-          <form class="sorting-type">
+          <form class="sorting-type" name="sorting-form">
             <label class="visually-hidden" for="sorting">Сортирова</label>
             <select class="select-control" id="sorting" name="sorting">
               <option value="popular">Сначало популярные</option>
@@ -162,32 +162,35 @@
          <ul class="product-list">
            <li class="product-card">
             <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="Картинка селфи-палки">
-            <h3 class="product-card-title">Любительская селфи-палка</h3>
-            <a class="button" href="#">Подробнее</a>
+              <img class="product-card-image" src="" alt="Картинка селфи-палки">
+              <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
-            <b class="product-card-price">500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
+            <p class="product-card-price">500 ₽</p>
            </li>
            <Li class="product-card">
             <a class="product-card-link" href="#">
-            <img class="product-card-image" src="" alt="Картинка профессилнальной селфи-палки">
-            <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+              <img class="product-card-image" src="" alt="Картинка профессилнальной селфи-палки">
+              <h3 class="product-card-title">Профессиональная селфи-палка</h3>
             </a>
-            <b class="product-card-price">1500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
+            <p class="product-card-price">1500 ₽</p>
            </Li>
            <Li class="product-card">
             <a class="product-card-link" href="#">
-            <img class="product-card-image" src="" alt="Картинка непотопляемой селфи-палки">
-            <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+              <img class="product-card-image" src="" alt="Картинка непотопляемой селфи-палки">
+              <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
             </a>
-            <b class="product-card-price">2500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
+            <p class="product-card-price">2500 ₽</p>
            </Li>
            <Li class="product-card">
             <a class="product-card-link" href="#">
-            <img class="product-card-image" src="" alt="Картинка селфи-палка «Следуй за мной»">
-            <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+              <img class="product-card-image" src="" alt="Картинка селфи-палка «Следуй за мной»">
+              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
-            <b class="product-card-price">4900 ₽</b>
+            <a class="button" href="#">Подробнее</a>
+            <p class="product-card-price">4900 ₽</p>
            </Li>
          </ul>
          <button class="button" tupe="submit">Загрузить ещё</button>
