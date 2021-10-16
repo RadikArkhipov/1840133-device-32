@@ -12,20 +12,20 @@
             <img class="page-header-logo" src="images/header/logo-device-header.svg" alt="Логотип интернет-магазина «Девайс»" width="145" height="36">
           </a>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Поиск по сайту</a>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">Поиск по сайту</a>
             </li>
-            <li class="navigation-item">
-             <a class="navigation-link" href="#">Коля Петухов</a>
+            <li class="user-navigation-item">
+             <a class="user-navigation-link" href="#">Коля Петухов</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Выйти</a>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">Выйти</a>
             </li>
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">Сравнить</a>
+            <li class="user-navigation-item"> 
+              <a class="user-navigation-link" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">Корзина</a>
+            <li class="user-navigation-item"> 
+              <a class="user-navigation-link" href="#">Корзина</a>
             </li>
           </ul>
           <ul class="navigation-list">
@@ -72,10 +72,10 @@
               <button class="range-toogle toogle-max" type="button">
                 <span class="visually-hidden">Изменить максимальную цену</span>
               </button>
-              <label class="catalog-filter-label"> от
+              <label class="catalog-filter-label"> от 0
                 <input class="catalog-filter-input" type="number" name="min-price">
               </label>
-              <label class="catalog-filter-label"> до
+              <label class="catalog-filter-label"> до 5000
                 <input class="catalog-filter-input" type="number" name="max-price">
               </label>
             </fieldset>
@@ -142,24 +142,24 @@
             </fieldset>
             <button class="button" tupe="submit">Показать</button>
           </form>
-
-          <h3 class="sorting">Сортировка:</h3>
-          <form class="sorting-type" name="sorting-form">
-            <label class="visually-hidden" for="sorting">Сортирова</label>
-            <select class="select-control" id="sorting" name="sorting">
-              <option value="popular">Сначало популярные</option>
-              <option value="cheap">Сначало дешевые</option>
-              <option value="expensive">Сначало дорогие</option>
-            </select>
-            <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-          </form>
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-
+          <div class="sorting-container">
+            <h3 class="sorting-title">Сортировка:</h3>
+            <form class="sorting-type" name="sorting-form">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="popular">Сначало популярные</option>
+                <option value="cheap">Сначало дешевые</option>
+                <option value="expensive">Сначало дорогие</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+            </form>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+            <a href="#" class="button">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </div>
          <ul class="product-list">
            <li class="product-card">
             <a class="product-card-link" href="product.html">
@@ -194,34 +194,34 @@
             <p class="product-card-price">4900 ₽</p>
            </li>
          </ul>
-         <button class="button" type="submit">Загрузить ещё</button>
+         <button class="button-loading" type="submit">Загрузить ещё</button>
          <ul class="pagination">
-           <li class="pagination-item">
-             <a class="pagination-link pagination-prev pagination-disabled">
-               <p class="pagination-text">Назад</p>
-             </a>
-           </li>
-           <li class="pagination-item">
-             <a class="pagination-link pagination-current">1</a>
-           </li>
-           <li class="pagination-item">
-            <a class="pagination-link">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <p class="pagination-text">Вперёд</p>
-            </a>
-          </li>
-        </ul>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <p class="pagination-text">Назад</p>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <p class="pagination-text">Вперёд</p>
+              </a>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="page-footer">
@@ -236,28 +236,28 @@
           <h2 class="visually-hidden">Сервис</h2>
           <ul class="footer-services-list">
             <li class="footer-services-item">
-              <a class="button" href="#">Доставка</a>
+              <a class="footer-button" href="#">Доставка</a>
             </li>
             <li class="footer-services-item">
-              <a class="button" href="#">Гарантия</a>
+              <a class="footer-button" href="#">Гарантия</a>
             </li>
             <li class="footer-services-item">
-              <a class="button" href="#">Контакты</a>
+              <a class="footer-button" href="#">Контакты</a>
             </li>
           </ul>
           <ul class="footer-social-list"> 
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="button-social" href="#">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="button-social" href="#">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="button-social" href="#">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
