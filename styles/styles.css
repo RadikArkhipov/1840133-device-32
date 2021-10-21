@@ -39,7 +39,16 @@
     font-display: swap;
 }
 
-.body {
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -49,7 +58,70 @@
 
 .page-header {
     color: #000000;
-    background: #FFE17F;
+    background-color: #FFE17F;
+    padding-bottom: 150px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    width: 1041px;
+    margin: 0 auto;
+}
+
+.page-header-logo {
+    margin-top: -23px;
+    margin-bottom: 35px;
+}
+
+.user-navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 29px;
+}
+
+.user-navigation-item-search {
+    width: 516px;
+    margin-right: 24px;
+}
+
+.user-navigation-item-login {
+    margin-right: 247px;
+
+}
+
+.user-navigation-item-compare {
+    margin-right: 132px;
+}
+
+.user-navigation-item-basket {
+
+}
+
+.main-navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-item-catalog {
+    margin-right: 247px;
+}
+
+.navigation-item-dilivery {
+    margin-right: 19px;
+}
+
+.navigation-item-guarantee {
+    margin-right: 62px;
 }
 
 .user-navigation-link {
@@ -76,6 +148,10 @@
     background-color: #FFE17F;
     color: inherit;
 }
+
+.main-container {
+    flex-grow: 1;
+} 
 
 .main-index {
     color: #000000;
@@ -436,6 +512,10 @@ line-height: 30px;
     line-height: 19px;
 }
 
+.product-card-link {
+    text-decoration: none;
+}
+
 .product-card-title {
     font-family: "Rubik", sans-serif;
     font-weight: 700;
@@ -444,7 +524,6 @@ line-height: 30px;
     color: #000000;
     background-color: #FFFFFF;
     letter-spacing: -0.02em;
-    /*text-decoration: none;*/
 }
 
 .product-card-price {
@@ -465,6 +544,7 @@ line-height: 30px;
     background-color: #FFFFFF;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    border:none;
 }
 
 .pagination {
