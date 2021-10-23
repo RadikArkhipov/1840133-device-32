@@ -56,6 +56,15 @@ body {
     background-color: #FFFFFF;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    display: none;
+}
 .page-header {
     color: #000000;
     background-color: #FFE17F;
@@ -159,6 +168,41 @@ body {
     background-size: 100% auto;
 }
 
+.product-sliders {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.slider-pagination-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.product-slider-list {
+    display: flex;
+    
+}
+
+.product-slider-item-1 {
+    display: flex;
+    
+}
+
+.product-text-container {
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+}
+
+.product-slider-item-2 {
+    display: none;
+}
+
+.product-slider-item-3 {
+    display: none;
+}
+
+
 .slider-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -196,6 +240,17 @@ body {
     font-size: 16px;
     line-height: 30px;
     color: #444444;
+}
+
+.product-categories {
+    display: flex;
+}
+
+.categories-list {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .categories-item-link {
