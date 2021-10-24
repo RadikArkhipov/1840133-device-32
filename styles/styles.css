@@ -173,10 +173,14 @@ ul {
     margin: 0 auto;
 }
 
+.slider-button {
+    display: none;
+}
 .slider-pagination-list {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: none;
 }
 .product-slider-list {
     display: flex;
@@ -253,6 +257,10 @@ ul {
     justify-content: space-between;
 }
 
+.categories-item {
+    width: 160px;
+} 
+
 .categories-item-link {
     text-decoration: none;
 }
@@ -266,12 +274,71 @@ ul {
     color: #000000;
 }
 
-.services-slider {
+.services-tabs {
     color: #000000;
     background-color: #F0F0F0;
+    background-size: 100% auto;
+    margin-bottom: 90px;
 }
 
-.button-slider-navigation {
+.services-tabs-container {
+    display: flex;
+} 
+.services-tabs-controls {
+    display: flex;
+    width: 280px;
+    
+    margin-right: 120px;
+
+}
+
+.services-tabs-navigation-list {
+    
+}
+.services-tabs-navigation-item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+
+.services-tabs-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 760px;
+}
+
+.services-tabs-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+.services-tabs-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    
+}
+
+.tabs-delivery {
+    background-image: url("../images/index-main/delivery-2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.tabs-guarantee {
+    display: none;
+}
+
+.tabs-credit {
+    display: none;
+}
+
+.button-tabs-navigation {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -283,25 +350,22 @@ ul {
     background-color: #FFC700;
 }
 
-.services-slider-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
-    background-color: #F0F0F0;
-}
 
-.services-slider-text {
+
+.services-tabs-text {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
     background-color: #F0F0F0;
+    width: 500px;
 }
 
 .delivery {
     background-color: #F0F0F0;
+    display: flex;
+    
 }
 
 .delivery-text {
@@ -313,10 +377,20 @@ ul {
     text-align: center;
     text-transform: uppercase;
     background-color: #F0F0F0;
+    padding-left: 150px;
+    padding-top: 37px;
+    padding-bottom: 43px;
+    margin: 0;
 }
 
+.info-contacts {
+    display: flex;
+
+}
 .info {
     background-color: #FFFFFF;
+    width: 560px;
+    margin-right: 40px;
 }
 
 .info-title {
@@ -348,6 +422,7 @@ ul {
 background-color: #FFFFFF;
 font-size: 18px; 
 line-height: 30px; 
+width: 560px;
 }
 
 .contacts-title {
@@ -397,19 +472,25 @@ line-height: 30px;
     background-color: #FFFFFF;
 }
 
-.mailing {
+.section-mailing {
     background-color: #F0F0F0;
     background-size: 100% auto;
     font-size: 18px;
     line-height: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
+.mailing-upper-container {
+    display: flex;
+}
 .mailing-upper-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     line-height: 50px;
     color: #000000;
     background-color: #F0F0F0;
+    
 }
 
 .mailing-upper-text {
@@ -417,6 +498,10 @@ line-height: 30px;
     font-weight: 400;
     color: #444444;
     background-color: #F0F0F0;
+}
+
+.mailing-lower-container {
+    display: flex;
 }
 
 .button-mailing {
@@ -450,11 +535,32 @@ line-height: 30px;
     line-height: 30px;
     background-color: #444444;
     background-size: 100% auto;
+    padding-top: 62px;
+    padding-bottom: 61px;
+    
+    
+    
 }
 
 .page-footer a {
     color: inherit;
     text-decoration: none;
+}
+
+.page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-address-logo {
+    
+    
+}
+
+.footer-logo {
+    padding-bottom: 35px;
+    
 }
 
 .footer-address {
@@ -463,6 +569,26 @@ line-height: 30px;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
+ }
+
+ .footer-address-text {
+    margin: 0;
+    width: 239px;
+    
+ }
+
+.footer-services-social {
+    display: flex;
+    
+    
+    
+}
+
+.footer-services-list {
+    
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .footer-button {
@@ -472,6 +598,17 @@ line-height: 30px;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.footer-social-list {
+    
+}
+
+.phone-logo {
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 .footer-phone {
