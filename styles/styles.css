@@ -502,8 +502,13 @@ width: 560px;
 
 .mailing-lower-container {
     display: flex;
+    justify-content: space-between;
 }
 
+.mailing-lower-form {
+   
+    
+}
 .button-mailing {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -513,6 +518,7 @@ width: 560px;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    width: 260px;
 }
 
 .field {
@@ -520,6 +526,8 @@ width: 560px;
     font-weight: 400;
     color: #444444;
     background-color: #F0F0F0;
+    width: 560px;
+    margin-right: 40px;
 }
 
 .mailing-lower-text {
@@ -527,6 +535,8 @@ width: 560px;
     font-weight: 400;
     color: #444444;
     background-color: #F0F0F0;
+    margin: 0;
+    
 }
 
 .page-footer {
@@ -626,6 +636,7 @@ width: 560px;
 
 .inner-header {
     font-family: sans-serif;
+    
 }
 
 .inner-header-title {
@@ -635,6 +646,9 @@ width: 560px;
     line-height: 50px;
 }
 
+.breadcrumbs {
+    display: flex;
+}
 .breadcrumbs-link {
     font-family: sans-serif;
     color: #444444;
@@ -642,6 +656,9 @@ width: 560px;
     text-decoration: none;
 }
 
+.catalog-products {
+    display: flex;
+}
 .filter-title {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -657,6 +674,10 @@ width: 560px;
     font-family: sans-serif;
     color: #000000;
     background-color: #EBEBEB;
+    width: 468px;
+    margin-right: 72px;
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-filter-title {
@@ -679,9 +700,14 @@ width: 560px;
     background-color: #EBEBEB;
 }
 
+.catalog-right-column {
+
+} 
 .sorting-container {
     color:#000000;
     background-color: #EBEBEB;
+    align-items: center;
+    display: flex;
     
 }
 
@@ -703,6 +729,17 @@ width: 560px;
     font-size: 16px;
     line-height: 19px;
 }
+
+.container-card {
+    width: 760px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 
 .product-card-link {
     text-decoration: none;
@@ -742,6 +779,9 @@ width: 560px;
 .pagination {
     color: #000000;
     background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .pagination-link {
@@ -761,6 +801,12 @@ width: 560px;
     background-color: #EBEBEB;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.container-pagination-link {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
 }
 
 .pagination-next {
