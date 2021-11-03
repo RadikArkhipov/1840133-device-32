@@ -9,20 +9,26 @@
     <header class="container page-header">
       <nav class="navigation">
         <img class="page-header-logo" src="images/header/logo-device-header.svg" alt="Логотип интернет-магазина «Девайс»" width="145" height="36">
-        <ul class="user-navigation-list">
-          <li class="user-navigation-item-search">
-            <a class="user-navigation-link link-search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-navigation-item-login">
-            <a class="user-navigation-link link-login" href="#">Войти</a>
-          </li>
-          <li class="user-navigation-item-compare"> 
-            <a class="user-navigation-link link-compare" href="#">Сравнить</a>
-          </li>
-          <li class="user-navigation-item-basket"> 
-            <a class="user-navigation-link link-basket" href="#">Корзина</a>
-          </li>
-        </ul>
+
+        <div class="container-user-navigation">
+          <form class="form-search-input" action="https://echo.htmlacademy.ru/" method="POST">
+            <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="form-search-button" type="submit">Найти</button>
+          </form>
+
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item-login">
+              <a class="user-navigation-link link-login" href="#">Войти</a>
+            </li>
+            <li class="user-navigation-item-compare"> 
+              <a class="user-navigation-link link-compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-navigation-item-basket"> 
+              <a class="user-navigation-link link-basket" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+
         <ul class="main-navigation-list">
           <li class="main-navigation-item-catalog">
             <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
