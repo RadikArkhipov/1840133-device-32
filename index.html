@@ -50,57 +50,7 @@
               </div>
             </div>
 
-            
-            <!--
-              <div class="container-submenu-list">
-                <ul class="submenu-list list">
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="#">Моноподы для селфи</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="submenu-list list">
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="#">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="submenu-list list">
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </div>
-            -->
-              
 
-            <!--<ul class="submenu-list list">
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Умные часы</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>-->
 
           </li>
           <li class="main-navigation-item-dilivery">
@@ -115,21 +65,22 @@
         </ul>
       </nav>
     </header>
+    
     <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
       <section class="product-sliders">
         <h2 class="visually-hidden">Слайды товаров</h2>
         <button class="slider-button slider-prev" type="button">
-          <svg aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/></svg>
+          <svg class="slider-prev-img" aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/></svg>
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="slider-button slider-next" type="button">
-          <svg aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 60h3.5L20 30 3.5 0H0l16.2 30L0 60Z" fill="#000"/></svg>
+          <svg class="slider-next-img" aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 60h3.5L20 30 3.5 0H0l16.2 30L0 60Z" fill="#000"/></svg>
           <span class="visually-hidden">Следующее фото</span>
         </button>
         <ol class="slider-pagination-list">
-          <li class="slider-pagination">
+          <li class="slider-pagination slider-pagination-active">
             <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">1 фото</span>
             </button>
@@ -270,9 +221,9 @@
       <section class="services-tabs">
         <div class="container services-tabs-container">
           <h2 class="visually-hidden">Сервис</h2>
-          <div class="services-tabs-controls">
+          
             <ul class="services-tabs-navigation-list">
-              <li class="services-tabs-navigation-item">
+              <li class="services-tabs-navigation-item services-tabs-navigation-item-active">
                 <a class="button-tabs-navigation" href="#">Доставка</a>
               </li>
               <li class="services-tabs-navigation-item">
@@ -282,7 +233,7 @@
                 <a class="button-tabs-navigation" href="#">Кредит</a>
               </li>
             </ul>
-          </div>
+          
           <ul class="services-tabs-list">
             <li class="services-tabs-item tabs-delivery">
               <h3 class="services-tabs-title">Доставка</h3>
@@ -326,7 +277,7 @@
             ТоксБерри
           </li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
+        <a class="button button-info" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
@@ -341,7 +292,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button button-contacts" href="#">Напишите нам</a>
       </section>
     </div>
       <section class="section-mailing">
