@@ -27,6 +27,39 @@
               <a class="user-navigation-link link-basket" href="#">
                 <span class="basket-amount">2</span>Корзина              
               </a>
+              <section class="cart-modal">
+                <ul class="cart-modal-list">
+                  <li class="cart-modal-item">
+                    <a href="#">
+                      <img src="images/header/product-1-small.png" width="41" height="43" alt="Фотография товара">
+                      <h3>Любительская селфи&#8209;палка</h3>
+                    </a>
+                    <button type="button">
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-modal-item">
+                    <a href="#">
+                      <img src="images/header/product-2-small.png" width="41" height="43" alt="Фотография товара">
+                      <h3>Профессиональная селфи&#8209;палка</h3>
+                    </a>
+                    <button type="button">
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-modal-total">
+                  <span>Товаров: 2</span>
+                  <span>Сумма: 2000 ₽</span>
+                </div>
+                <a href="#" class="button cart-modal-button">Открыть корзину</a>
+              </section>
             </li>
           </ul>
         </div>
@@ -65,7 +98,7 @@
         </ul>
       </nav>
     </header>
-    
+
     <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
@@ -336,19 +369,19 @@
           </ul>
           <ul class="footer-social-list"> 
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-fb" href="#">
+              <a class="footer-social-link footer-social-fb" href="https://wwww.facebook.com/htmlacademy">
                 <svg class="social-icon" aria-hidden="true" focusable="false" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity=".3"/> <path d="M22.5 14H25v-3h-3.4c-2.8 0-3.6 1.7-3.6 4.2V17h-2v3h2v9h3v-9h3.3l.6-3H21v-1.5c0-.8.3-1.5 1.5-1.5Z" fill="#444"/></svg>
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-instagram" href="#">
+              <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy/">
                 <svg class="social-icon" aria-hidden="true" focusable="false" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity=".3"/><path d="M20 22a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#444"/><path d="M26.7 13.3c-.9-.9-2-1.3-3.4-1.3h-6.6c-2.8 0-4.7 1.9-4.7 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4v-6.6c0-1.4-.4-2.6-1.3-3.4ZM20 24.1c-2.2 0-4.1-1.8-4.1-4.1s1.9-4.1 4.1-4.1c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="#444"/></svg>
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-tw" href="#">
+              <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
                 <svg class="social-icon" aria-hidden="true" focusable="false" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#fff" fill-opacity=".3"/><g clip-path="url(#a)"><path d="M22.7 13.1c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(13 13)" d="M0 0h15v14H0z"/></clipPath></defs></svg>
                 <span class="visually-hidden">Твиттер</span>
               </a>
@@ -364,5 +397,56 @@
         </div>
       </div>  
     </footer>
+    <section class="modal modal-delivery">
+      <h2 class="delivery-header">Доставка под заказ</h2>
+      <button type="button" aria-label="Закрыть форму" class="modal-close"></button>
+      <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="delivery-input-wrapper">
+          <label class="delivery-name-label">
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+            <span class="delivery-input-note">Пожалуйста, представьтесь</span>
+          </label>
+          <label class="delivery-mail-label">
+            Ваш e-mail:
+            <input type="email" name="email" placeholder="krasotka92@mail.ru">
+            <span class="delivery-input-note">Забавный у вас адрес</span>
+          </label>
+        </div>
+        <div class="delivery-input-wrapper">
+          <label class="delivery-area-label">
+            Что нужно привезти:
+            <textarea placeholder="В свободной форме" name="area"></textarea>
+          </label>
+          <label class="delivery-amount-label">
+            <div class="delivery-amount-label-title">
+              Количество:
+              <div class="delivery-amount-tooltip">
+                <span>
+                  <span class="visually-hidden">Дополнительная информация</span>
+                </span>
+                <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+              </div>
+            </div>
+            <div class="delivery-amount-wrapper">
+              <button type="button" class="delivery-amount-less">
+                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 0H0V2H16V0Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <input type="number" placeholder="1" name="amount" step="1" min="0">
+              <button type="button" class="delivery-amount-more">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </div>
+          </label>
+        </div>
+          <button type="submit" class="button delivery-button">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
