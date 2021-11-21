@@ -561,6 +561,7 @@ body {
   border-color: transparent;
 }
 
+.main-navigation-item-catalog:focus .main-navigation-link-submenu:after,
 .main-navigation-item-catalog:hover .main-navigation-link-submenu:after {
   border: 2px solid #000000;
   background-image: url("../images/header/minus.svg");
@@ -568,9 +569,20 @@ body {
   opacity: 1;
 }
 
-.main-navigation-item-catalog:hover  .container-submenu {
+.main-navigation-item-catalog:hover .container-submenu,
+.main-navigation-item-catalog:focus .container-submenu {
   display: flex;
 }
+
+.main-navigation-item-catalog:focus {
+    outline: none;
+}
+  
+  .main-navigation-item-catalog:focus .main-navigation-link-submenu {
+    border-color:#AF4FFF;
+    border-radius: 25px;
+}
+
 
 .main-navigation-link {
     font-family: "Raleway", sans-serif;

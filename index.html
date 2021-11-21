@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="../1840133-device-32/images/favicon.ico"> <!-- 32x32-->
   </head>
   <body>
     <header class="container page-header">
@@ -12,7 +13,9 @@
 
         <div class="container-user-navigation">
           <form class="form-search-input" action="https://echo.htmlacademy.ru/" method="POST">
-            <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+            <label>
+              <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+            </label>
             <button class="form-search-button" type="submit">Найти</button>
           </form>
 
@@ -65,7 +68,7 @@
         </div>
 
         <ul class="main-navigation-list">
-          <li class="main-navigation-item-catalog">
+          <li class="main-navigation-item-catalog" tabindex="0">
             <a class="main-navigation-link-submenu link-catalog" href="catalog.html">Каталог товаров</a>
 
             <div class="container-submenu">
@@ -336,6 +339,7 @@
           </div>
           <div class="mailing-lower-container">
             <form class="mailing-lower-form" action="https://echo.htmlacademy.ru/" method="POST" name="subscribe-form">
+              <label class="visually-hidden" for="mailing-email">Отправка электронной почты</label>
               <input class="field error" placeholder="Ваш e-mail" name="mailing-email" id="mailing-email" required>
               <button class="button-mailing" type="submit">Подписаться</button>
             </form>
@@ -436,7 +440,9 @@
                   </svg>
                   <span class="visually-hidden">Меньше</span>
                 </button>
+                <label>
                 <input type="number" placeholder="1" name="amount" step="1" min="0">
+                </label>
                 <button type="button" class="delivery-amount-more">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>

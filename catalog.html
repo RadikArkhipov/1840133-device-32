@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="../1840133-device-32/images/favicon.ico"> <!-- 32x32-->
   </head>
   <body>
       <header class="container page-header">
@@ -13,7 +14,9 @@
           </a> 
           <div class="container-user-navigation">
             <form class="form-search-input" action="https://echo.htmlacademy.ru/" method="POST">
+              <label>
               <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+              </label>
               <button class="form-search-button" type="submit">Найти</button>
             </form> 
             <ul class="user-navigation-list">
@@ -66,7 +69,7 @@
           </div>
 
           <ul class="main-navigation-list">
-            <li class="main-navigation-item-catalog">
+            <li class="main-navigation-item-catalog" tabindex="0">
               <a class="main-navigation-link-submenu link-catalog" href="catalog.html">Каталог товаров</a>
   
               <div class="container-submenu">
