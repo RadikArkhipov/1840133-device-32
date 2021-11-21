@@ -234,7 +234,7 @@
           <li class="categories-item">
             <a class="categories-item-link" href="#">
               <div class="container-picture">
-                <img class="categories-item-picture" src="images/index-main/popular-5.png" alt="Картинка умных часов"width="56" height="98">
+                <img class="categories-item-picture" src="images/index-main/popular-5.png" alt="Картинка умных часов" width="56" height="98">
               </div>
               <h3 class="categories-item-title">Умные часы</h3>
             </a>
@@ -397,56 +397,58 @@
         </div>
       </div>  
     </footer>
-    <section class="modal modal-delivery">
-      <h2 class="delivery-header">Доставка под заказ</h2>
-      <button type="button" aria-label="Закрыть форму" class="modal-close"></button>
-      <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="delivery-input-wrapper">
-          <label class="delivery-name-label">
-            Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
-            <span class="delivery-input-note">Пожалуйста, представьтесь</span>
-          </label>
-          <label class="delivery-mail-label">
-            Ваш e-mail:
-            <input type="email" name="email" placeholder="krasotka92@mail.ru">
-            <span class="delivery-input-note">Забавный у вас адрес</span>
-          </label>
-        </div>
-        <div class="delivery-input-wrapper">
-          <label class="delivery-area-label">
-            Что нужно привезти:
-            <textarea placeholder="В свободной форме" name="area"></textarea>
-          </label>
-          <label class="delivery-amount-label">
-            <div class="delivery-amount-label-title">
-              Количество:
-              <div class="delivery-amount-tooltip">
-                <span>
-                  <span class="visually-hidden">Дополнительная информация</span>
-                </span>
-                <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <h2 class="delivery-header">Доставка под заказ</h2>
+        <button type="button" aria-label="Закрыть форму" class="modal-close"></button>
+        <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="delivery-input-wrapper">
+            <label class="delivery-name-label">
+              Ваше имя:
+              <input type="text" name="name" placeholder="Имя Фамилия">
+              <span class="delivery-input-note">Пожалуйста, представьтесь</span>
+            </label>
+            <label class="delivery-mail-label">
+              Ваш e-mail:
+              <input type="email" name="email" placeholder="krasotka92@mail.ru">
+              <span class="delivery-input-note">Забавный у вас адрес</span>
+            </label>
+          </div>
+          <div class="delivery-input-wrapper">
+            <label class="delivery-area-label">
+              Что нужно привезти:
+              <textarea placeholder="В свободной форме" name="area"></textarea>
+            </label>
+            <div class="delivery-amount-label">
+              <div class="delivery-amount-label-title">
+                Количество:
+                <div class="delivery-amount-tooltip">
+                  <span>
+                    <span class="visually-hidden">Дополнительная информация</span>
+                  </span>
+                  <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+                </div>
+              </div>
+              <div class="delivery-amount-wrapper">
+                <button type="button" class="delivery-amount-less">
+                  <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0V2H16V0Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input type="number" placeholder="1" name="amount" step="1" min="0">
+                <button type="button" class="delivery-amount-more">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Больше</span>
+                </button>
               </div>
             </div>
-            <div class="delivery-amount-wrapper">
-              <button type="button" class="delivery-amount-less">
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 0H0V2H16V0Z" fill="black"/>
-                </svg>
-                <span class="visually-hidden">Меньше</span>
-              </button>
-              <input type="number" placeholder="1" name="amount" step="1" min="0">
-              <button type="button" class="delivery-amount-more">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
-                </svg>
-                <span class="visually-hidden">Больше</span>
-              </button>
-            </div>
-          </label>
-        </div>
-          <button type="submit" class="button delivery-button">Отправить</button>
-      </form>
-    </section>
+          </div>
+            <button type="submit" class="button delivery-button">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
